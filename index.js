@@ -8,7 +8,7 @@ const server = http.createServer(function(request, response) {
   if (request.method == 'POST') {
     console.log('POST')
     var body = ''
-    //test
+  
     request.on('data', function(data) {
       body += data
     })
